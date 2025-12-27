@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   font-family: "Figtree";
   background-color: var(--primary-background-color);
 
@@ -48,6 +48,7 @@ body {
   padding: var(--spacing-300);
 
   border-radius: 20px;
+  border: 2px solid black;
 
   transition: 0.8s;
 }

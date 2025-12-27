@@ -20,15 +20,23 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   font-family: "Figtree";
   background-color: var(--primary-background-color);
 
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  padding: 2px;
+}
+
+.container {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   gap: var(--spacing-300);
 
   padding: var(--spacing-50)
@@ -121,6 +129,8 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  margin-top: var(--spacing-300);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

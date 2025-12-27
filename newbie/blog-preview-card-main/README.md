@@ -15,12 +15,12 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](images/Screenshot.png)
+![](./assets/images/Screenshot.png)
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/blog-preview-card-by-manhill-Uh-2OnuKX1
+- Live Site URL: https://manhillih.netlify.app/newbie/blog-preview-card-main/
 
 ## My process
 

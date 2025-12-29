@@ -20,7 +20,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/blog-preview-card-by-manhill-Uh-2OnuKX1
-- Live Site URL: https://manhillih.netlify.app/newbie/blog-preview-card-main/
+- Live Site URL: https://manhillih.netlify.app/blog-preview-card-main/
 
 ## My process
 

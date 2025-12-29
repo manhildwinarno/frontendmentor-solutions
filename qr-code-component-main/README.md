@@ -20,7 +20,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/responsive-qr-code-website-92TtWU5BuL
-- Live Site URL: https://qr-code-component-main-manhill.netlify.app/
+- Live Site URL: https://manhillih.netlify.app/qr-code-component-main/
 
 ## My process
 

@@ -76,6 +76,7 @@ body {
 
   font-size: 14px;
   font-weight: 800;
+  line-height: 150%;
   text-align: center;
 
   width: 82px;
@@ -92,12 +93,14 @@ body {
 .publish {
   font-size: 14px;
   font-weight: 500;
+  line-height: 150%;
 }
 
 .title {
   font-size: var(--spacing-300);
   font-weight: 800;
   transition: 0.8s;
+  line-height: 150%;
 }
 
 .card:hover .title {
@@ -107,6 +110,7 @@ body {
 .description {
   font-size: 16px;
   font-weight: 500;
+  line-height: 150%;
 
   color: var(--secondary-font-color);
 }
@@ -124,6 +128,7 @@ body {
 .profile p {
   font-size: 14px;
   font-weight: 800;
+  line-height: 150%;
 }
 
 .attribution {

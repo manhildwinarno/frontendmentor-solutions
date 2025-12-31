@@ -25,29 +25,42 @@ body {
 }
 
 h1,
-h3 {
+h2 {
   font-family: "Young Serif", serif;
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: var(--Brown-800);
+  font-weight: 400;
+  font-size: 26px;
 }
 
 .card {
   width: 100%;
   color: var(--Stone-600);
+  background-color: var(--White);
+  line-height: 150%;
 }
 
 header img {
   width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .content {
-  padding: 30px;
+  padding: 34px;
 
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.content h1 {
+.title {
   color: var(--Stone-900);
+  font-weight: 400;
+  line-height: 1;
 }
 
 .preparation {
@@ -58,11 +71,12 @@ header img {
   border-radius: 10px;
 
   padding: 25px;
+  margin-bottom: 10px;
 
   background-color: var(--Rose-50);
 }
 
-.preparation p {
+.prep-title {
   color: var(--Rose-800);
   font-weight: 700;
   font-size: 20px;
@@ -74,17 +88,68 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  padding-left: 1.5rem;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.instructions ol li::marker {
+  color: var(--Brown-800);
+  font-weight: 700;
+}
+
+.preparation ul li::marker,
+.ingredients ul li::marker {
+  color: var(--Brown-800);
+  font-size: 0.8rem;
 }
 
 li {
-  list-style-position: inside;
+  list-style-position: outside;
+
+  padding-left: 1rem;
 }
 
-h3 {
-  margin-bottom: 12px;
-  color: var(--Brown-800);
+hr {
+  border: 1px solid var(--Stone-150);
+  margin: 10px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+tr:last-child {
+  border: none;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  text-align: left;
   font-weight: 400;
-  font-size: 26px;
+  padding-left: 30px;
+}
+
+td {
+  color: var(--Brown-800);
+  font-weight: 700;
+  padding-right: 30px;
 }
 
 .attribution {
@@ -93,4 +158,43 @@ h3 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Responsive */
+
+@media (min-width: 736px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Stone-100);
+  }
+
+  .container {
+    max-width: 776px;
+    width: 100%;
+
+    padding: 90px 20px;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 20px;
+
+    padding: 10px;
+  }
+
+  header {
+    padding: 30px;
+  }
+
+  header img {
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
 }

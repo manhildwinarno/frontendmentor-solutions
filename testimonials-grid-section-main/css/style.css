@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px;
+
+  background-color: var(--Purple-50);
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 330px;
+  gap: 34px;
+
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 20px 29px;
+
+  border-radius: 12px;
+  box-shadow: 10px 10px 15px 1px hsla(224, 10%, 45%, 0.3);
+}
+
+.card.daniel {
+  background-color: var(--Purple-500);
+  color: var(--White);
+}
+
+.card.jonathan {
+  background-color: var(--Grey-500);
+  color: var(--White);
+}
+
+.card.jeanette {
+  background-color: var(--White);
+  color: var(--Grey-500);
+}
+
+.card.patrick {
+  background-color: var(--Dark-blue);
+  color: var(--Grey-200);
+}
+
+.card.kira {
+  background-color: var(--White);
+  color: var(--Grey-500);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 36px;
+  border-radius: 50%;
+}
+
+.daniel .profile-photo {
+  border: 3px solid var(--Purple-300);
+}
+
+.jonathan .profile-photo {
+  border: 3px solid var(--Grey-100);
+}
+
+.jeanette .profile-photo {
+  border: 3px solid var(--Grey-200);
+}
+
+.patrick .profile-photo {
+  border: 3px solid var(--Purple-500);
+}
+
+.kira .profile-photo {
+  border: 3px solid var(--Grey-200);
+}
+
+.profile-photo img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.profile-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.profile-desc {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-quote {
+  font-size: 1.5em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .card.kira {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width: 1110px) {
+  .container {
+    grid-template-columns: repeat(4, 300px);
+  }
+
+  .card {
+    transition: .2s;
+  }
+
+  .card.daniel {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 128px;
+    background-position: top right 60px;
+  }
+
+  .card.jonathan {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .card.jeanette {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .card.patrick {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  .card.kira {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+}
